@@ -1,11 +1,11 @@
-@import "/typography.css";
+@import "./typography.css";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  :root {
+  #root {
     @apply font-comfortaa;
   }
 }
