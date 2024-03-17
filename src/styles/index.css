@@ -14,7 +14,9 @@
 }
 
 @layer base {
+  html,
+  body,
   #root {
-    @apply font-comfortaa;
+    @apply bg-primary text-secondary font-comfortaa text-main-fs;
   }
 }
