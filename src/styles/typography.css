@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Comfortaa";
+  font-weight: 300;
+  src: url("./fonts/comforta-300.woff2");
+}
+@font-face {
+  font-family: "Comfortaa";
+  font-weight: 400;
+  src: url("./fonts/comforta-400.woff2");
+}
+@font-face {
+  font-family: "Comfortaa";
+  font-weight: 500;
+  src: url("./fonts/comforta-500.woff2");
+}
+@font-face {
+  font-family: "Comfortaa";
+  font-weight: 600;
+  src: url("./fonts/comforta-600.woff2");
+}
+@font-face {
+  font-family: "Comfortaa";
+  font-weight: 700;
+  src: url("./fonts/comforta-700.woff2");
+}
