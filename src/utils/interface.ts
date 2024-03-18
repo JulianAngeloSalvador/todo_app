@@ -9,6 +9,7 @@ export interface LinkBtn {
   to: string;
   text: string;
   styled: boolean;
+  className?: string;
 }
 
 export interface AuthInterface {
