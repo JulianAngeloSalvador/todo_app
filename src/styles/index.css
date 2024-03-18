@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .cta-btn {
+    @apply bg-cta hocus:bg-cta/55;
+  }
+}
+
 @layer utilities {
   .guide1 {
     @apply outline outline-2 outline-red-800;
