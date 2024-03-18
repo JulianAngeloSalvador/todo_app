@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 import { AuthInterface } from "../utils/interface";
 import GoogleAuthenticator from "./GoogleAuthenticator";
 
 export default function Authenticator(props: AuthInterface) {
   const { title, subtitle } = props.header;
-  const { googleAction, newUser, footer } = props;
+  const { googleAction, newUser } = props;
 
   return (
     <section className="min-h-dvh fixed inset-0 grid place-items-center px-6">
@@ -48,7 +49,17 @@ export default function Authenticator(props: AuthInterface) {
           </small>
           <GoogleAuthenticator action={googleAction} />
         </main>
-        {footer && <footer>{footer}</footer>}
+        <footer>
+          <p className="px-2 text-sm self-center font-light flex gap-x-2">
+            {!newUser ? "Not a member yet?" : "Already have an account?"}
+            <Link
+              to={`${!newUser ? "/register" : "/login"}`}
+              className="hocus:text-sky-300 text-blue-400"
+            >
+              {!newUser ? "Create account" : "Log In"}
+            </Link>
+          </p>
+        </footer>
       </div>
     </section>
   );
