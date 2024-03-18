@@ -8,6 +8,10 @@
   .cta-btn {
     @apply bg-cta hocus:bg-cta/55;
   }
+
+  small {
+    @apply text-xs;
+  }
 }
 
 @layer utilities {
@@ -17,6 +21,10 @@
   .guide2 {
     @apply outline outline-2 outline-teal-800;
   }
+
+  .cta-base-pad {
+    @apply px-4 pt-3 pb-2.5;
+  }
 }
 
 @layer base {
@@ -24,5 +32,13 @@
   body,
   #root {
     @apply bg-primary text-secondary font-comfortaa text-main-fs;
+  }
+
+  .autofill-text:-webkit-autofill {
+    -webkit-text-fill-color: theme("colors.secondary");
+  }
+
+  input {
+    @apply outline-none border-none autofill:shadow-[inset_0_0_0px_1000px_#000] autofill:shadow-primary autofill-text;
   }
 }
