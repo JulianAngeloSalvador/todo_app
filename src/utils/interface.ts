@@ -6,4 +6,5 @@ export interface ThemeInterface {
 export interface LinkBtn {
   to: string;
   text: string;
+  styled: boolean;
 }
