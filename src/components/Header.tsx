@@ -6,10 +6,6 @@ export default function Header() {
   const location = useLocation();
   let { pathname } = location;
 
-  useEffect(() => {
-    console.log(location.pathname);
-  }, [location]);
-
   return (
     <header className="flex justify-between items-center p-4 fixed z-10 top-0 left-0 w-full">
       <h1>
