@@ -5,12 +5,18 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./Root.tsx";
 import ErrorPage from "./pages/ErrorPage.tsx";
 import ThemeContextProvider from "./context/ThemeContext.tsx";
+import SignIn from "./components/SignIn.tsx";
+import SignUp from "./components/SignUp.tsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
     errorElement: <ErrorPage />,
+    children: [
+      { path: "/login", element: <SignIn /> },
+      { path: "/register", element: <SignUp /> },
+    ],
   },
 ]);
 
