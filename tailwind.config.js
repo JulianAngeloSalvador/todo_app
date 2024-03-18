@@ -9,11 +9,12 @@ export default {
     fontSize: {
       headline: "clamp(2.5rem, 4vw + 1rem, 3rem)",
       subheadline: "clamp(2rem, 3vw + 1rem, 2.5rem)",
-      title: "clamp(1.5rem, 2.5vw + 1rem, 2rem)",
-      subtitle: "clamp(1.5rem, 2.5vw + 1rem, 2rem)",
+      title: "clamp(1.25rem, 2.5vw + 1rem, 1.75rem)",
+      subtitle: "clamp(1.15rem, 2.5vw + 1rem, 1.65rem)",
       "main-fs": "clamp(.9rem, 1.5vw + .25rem, 1.05rem)",
-      caption: "clamp(0.875rem, 1.25vw + .5rem, 1rem)",
-      sm: "clamp(0.775rem, 1.15vw + .25rem, .925rem)",
+      caption: "clamp(0.75rem, 1.25vw + .5rem, .95rem)",
+      sm: "clamp(0.675rem, 1.15vw + .25rem, .825rem)",
+      xs: "clamp(0.475rem, 1.15vw + .25rem, .625rem)",
     },
     fontWeight: {
       light: "300",
@@ -34,6 +35,7 @@ export default {
     },
   },
   plugins: [
+    require("autoprefixer"),
     plugin(function ({ addVariant }) {
       addVariant("hocus", ["&:hover", "&:focus"]);
     }),
