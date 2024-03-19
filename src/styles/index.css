@@ -6,7 +6,7 @@
 
 @layer components {
   .cta-btn {
-    @apply bg-cta hocus:bg-cta/55 text-nowrap;
+    @apply bg-cta/85 hocus:bg-cta text-nowrap text-primary font-bold;
   }
 
   small {
@@ -24,6 +24,10 @@
 
   .cta-base-pad {
     @apply px-4 pt-3 pb-2.5;
+  }
+
+  .text-headline {
+    @apply font-extra-bold;
   }
 }
 
