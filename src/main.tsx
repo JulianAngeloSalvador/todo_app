@@ -7,6 +7,7 @@ import ErrorPage from "./pages/ErrorPage.tsx";
 import ThemeContextProvider from "./context/ThemeContext.tsx";
 import SignIn from "./components/SignIn.tsx";
 import SignUp from "./components/SignUp.tsx";
+import App from "./pages/App.tsx";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
+      { index: true, element: <App /> },
       { path: "/login", element: <SignIn /> },
       { path: "/register", element: <SignUp /> },
     ],
