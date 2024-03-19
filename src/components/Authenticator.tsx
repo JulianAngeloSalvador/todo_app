@@ -54,7 +54,7 @@ export default function Authenticator(props: AuthInterface) {
             {!newUser ? "Not a member yet?" : "Already have an account?"}
             <Link
               to={`${!newUser ? "/register" : "/login"}`}
-              className="hocus:text-sky-300 text-blue-400"
+              className="cta-text"
             >
               {!newUser ? "Create account" : "Log In"}
             </Link>
