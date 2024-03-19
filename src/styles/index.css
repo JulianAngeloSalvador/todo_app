@@ -6,7 +6,7 @@
 
 @layer components {
   .cta-btn {
-    @apply bg-cta hocus:bg-cta/55;
+    @apply bg-cta hocus:bg-cta/55 text-nowrap;
   }
 
   small {
