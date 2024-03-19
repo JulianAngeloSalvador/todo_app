@@ -49,4 +49,8 @@
   input {
     @apply outline-none border-none autofill:shadow-[inset_0_0_0px_1000px_#000] autofill:shadow-primary autofill-text;
   }
+
+  svg {
+    @apply max-w-full h-auto block;
+  }
 }
