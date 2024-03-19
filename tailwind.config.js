@@ -31,6 +31,7 @@ export default {
         "fluid-200": "min(200px, 100%)",
         "fluid-400": "min(400px, 100%)",
         "fluid-600": "min(600px, 100%)",
+        "fluid-1200": "min(1200px, 100%)",
       },
     },
   },
