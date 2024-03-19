@@ -45,8 +45,8 @@ export default {
     createThemes({
       light: {
         primary: "#FFFFFF",
-        secondary: "#0F0F0F",
-        cta: "#E6E6E6",
+        secondary: "#505050",
+        cta: "#083D77",
       },
       dark: {
         primary: "#0F0F0F",
