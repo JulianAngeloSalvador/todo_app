@@ -39,7 +39,7 @@
   html,
   body,
   #root {
-    @apply bg-primary text-secondary font-comfortaa text-main-fs;
+    @apply bg-primary text-secondary font-comfortaa text-main-fs selection:bg-secondary/30;
   }
 
   .autofill-text:-webkit-autofill {
