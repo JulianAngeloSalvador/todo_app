@@ -9,6 +9,10 @@
     @apply bg-cta/85 hocus:bg-cta text-nowrap text-primary font-bold;
   }
 
+  .cta-text {
+    @apply text-cta/85 hocus:text-cta;
+  }
+
   small {
     @apply text-xs;
   }
