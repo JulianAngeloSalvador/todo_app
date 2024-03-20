@@ -32,7 +32,7 @@ export default function LandingPage() {
           initialSegment={[15, 210]}
           loop={false}
           onComplete={() => mainLot.current?.stop}
-          className="absolute -bottom-[4.75rem] w-full"
+          className="absolute -bottom-[21%] w-full"
         />
       </div>
     </section>
