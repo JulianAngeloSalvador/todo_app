@@ -7,8 +7,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontSize: {
-      headline: "clamp(2rem, 4vw + 1rem, 3rem)",
-      subheadline: "clamp(1.5rem, 3vw + 1rem, 2rem)",
+      headline: "clamp(1.5rem, 3vw + 1rem, 3rem)",
       title: "clamp(1.25rem, 2.5vw + 1rem, 1.5rem)",
       subtitle: "clamp(1.1rem, 1.65vw + 1rem, 1.25rem)",
       "main-fs": "clamp(.9rem, 1.5vw + .25rem, 1.1rem)",
