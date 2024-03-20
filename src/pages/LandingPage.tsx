@@ -25,11 +25,14 @@ export default function LandingPage() {
           className="text-main-fs mt-4 self-start sm:self-center"
         />
       </article>
-      <div className="absolute left-0 bottom-0 -z-10 w-fluid-400 aspect-square">
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 sm:left-0 sm:translate-x-0 md:left-[5%] 2xl:left-2/4-z-10 w-fluid-400 aspect-square overflow-hidden">
         <LottieComp
           lottieRef={mainLot}
           animationData={mainLottie}
-          className="absolute -bottom-16 left-1/2 -translate-x-1/2 sm:translate-x-0 sm:left-[5%] 2xl:left-2/4 w-full"
+          initialSegment={[15, 210]}
+          loop={false}
+          onComplete={() => mainLot.current?.stop}
+          className="absolute -bottom-[4.75rem] w-full"
         />
       </div>
     </section>
