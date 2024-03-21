@@ -21,3 +21,11 @@ export interface AuthInterface {
   newUser: boolean;
   footer?: string | ReactElement;
 }
+
+// Main Data
+export interface UserProps {
+  id: number;
+  firstName: string;
+  lastName?: string;
+  email: string;
+}
