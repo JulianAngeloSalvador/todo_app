@@ -5,6 +5,7 @@ import {
   ReactNode,
   SetStateAction,
 } from "react";
+import { IconType } from "react-icons";
 
 export interface ThemeInterface {
   theme: string;
@@ -46,4 +47,5 @@ export interface MainProps {
 export interface MenuState {
   collapsed?: boolean;
   setCollapsed: Dispatch<SetStateAction<boolean>>;
+  Icon?: ReactElement;
 }
