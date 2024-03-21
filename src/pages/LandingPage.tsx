@@ -2,7 +2,7 @@ import LinkButton from "../components/LinkButton";
 import LottieComp from "../components/LottieComp";
 
 // Lotties
-import mainLottie from "../../public/lotties/tasksOptimized.json";
+import mainLottie from "../lotties/tasksOptimized.json";
 import { useRef } from "react";
 import { LottieRefCurrentProps } from "lottie-react";
 
