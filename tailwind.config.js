@@ -42,6 +42,7 @@ export default {
     require("autoprefixer"),
     plugin(function ({ addVariant }) {
       addVariant("hocus", ["&:hover", "&:focus"]);
+      addVariant("children", "& > *");
     }),
     createThemes({
       light: {
