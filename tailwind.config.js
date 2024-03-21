@@ -8,7 +8,7 @@ export default {
   theme: {
     fontSize: {
       headline: "clamp(1.5rem, 3vw + 1rem, 3rem)",
-      title: "clamp(1.25rem, 2.5vw + 1rem, 1.5rem)",
+      title: "clamp(1.75rem, 2.5vw + 1rem, 2rem)",
       subtitle: "clamp(1.1rem, 1.65vw + 1rem, 1.25rem)",
       "main-fs": "clamp(.9rem, 1.5vw + .25rem, 1.1rem)",
       caption: "clamp(0.75rem, 1.25vw + .5rem, .95rem)",
@@ -28,7 +28,9 @@ export default {
       },
       width: {
         "fluid-200": "min(200px, 100%)",
+        "fluid-300": "min(300px, 100%)",
         "fluid-400": "min(400px, 100%)",
+        "fluid-500": "min(500px, 100%)",
         "fluid-600": "min(600px, 100%)",
         "fluid-800": "min(800px, 100%)",
         "fluid-1000": "min(1000px, 100%)",
