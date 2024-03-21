@@ -48,6 +48,7 @@ export default {
       light: {
         primary: "#FFFFFF",
         secondary: "#505050",
+        tertiary: "#eff1f4",
         cta: "#083D77",
       },
       dark: {
