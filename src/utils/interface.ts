@@ -1,4 +1,10 @@
-import { ReactElement } from "react";
+import {
+  Dispatch,
+  MouseEventHandler,
+  ReactElement,
+  ReactNode,
+  SetStateAction,
+} from "react";
 
 export interface ThemeInterface {
   theme: string;
@@ -28,4 +34,16 @@ export interface UserProps {
   firstName: string;
   lastName?: string;
   email: string;
+}
+
+// Component Props
+export interface MainProps {
+  title: string;
+  body: ReactNode | ReactElement;
+  footer?: ReactNode | ReactElement;
+}
+
+export interface MenuState {
+  collapsed?: boolean;
+  setCollapsed: Dispatch<SetStateAction<boolean>>;
 }
