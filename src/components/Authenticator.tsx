@@ -8,7 +8,7 @@ export default function Authenticator(props: AuthInterface) {
 
   return (
     <section className="min-h-dvh fixed inset-0 grid place-items-center px-6">
-      <div className="outline outline-1 outline-secondary/55 rounded-xl px-2 py-8 w-fluid-300 aspect-square flex flex-col justify-center items-center gap-4">
+      <div className="outline outline-1 outline-secondary/55 rounded-xl px-2 py-8 w-fluid-350 aspect-square flex flex-col justify-center items-center gap-4">
         <header className="text-center py-2">
           <h3 className="text-subtitle">{title}</h3>
           <p className="text-sm">{subtitle}</p>
