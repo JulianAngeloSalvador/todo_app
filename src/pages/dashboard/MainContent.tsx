@@ -15,7 +15,7 @@ export default function MainContent(props: MainProps) {
         {/* <div className={!collapsed ? "scale-0 hidden" : "scale-100"}>
           <MenuToggler setCollapsed={setCollapsed} />
         </div> */}
-        <h2 className="text-title ">{title}</h2>
+        <h2 className="text-caption">{title}</h2>
       </header>
       {body}
     </section>
