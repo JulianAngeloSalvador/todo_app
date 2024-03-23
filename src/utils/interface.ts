@@ -1,6 +1,6 @@
 import {
+  ComponentType,
   Dispatch,
-  MouseEventHandler,
   ReactElement,
   ReactNode,
   SetStateAction,
@@ -48,4 +48,12 @@ export interface MenuState {
   collapsed?: boolean;
   setCollapsed: Dispatch<SetStateAction<boolean>>;
   Icon?: ReactElement;
+}
+
+// Dashboard links
+export interface SidelinkProps {
+  title?: string;
+  path: string;
+  icon: ComponentType<any> | IconType;
+  index?: "dashboardIndex" | "mainIndex";
 }
