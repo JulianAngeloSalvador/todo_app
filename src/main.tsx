@@ -10,6 +10,7 @@ import SignUp from "./components/SignUp.tsx";
 import App from "./pages/App.tsx";
 import Dashboard from "./routes/Dashboard.tsx";
 import Todo from "./pages/dashboard/Todo.tsx";
+import DashboardIndex from "./pages/dashboard/DashboardIndex.tsx";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,7 @@ const router = createBrowserRouter([
     path: "/dashboard",
     element: <Dashboard />,
     children: [
+      { index: true, element: <DashboardIndex /> },
       { path: "/dashboard/todo", element: <Todo /> },
       { path: "/dashboard/calendar" },
       { path: "/dashboard/trash" },
