@@ -17,7 +17,7 @@ export default function MenuToggler(props: MenuState) {
   return (
     <button
       onClick={handleMenuState}
-      className={`rounded-md w-6 aspect-square bg-tertiary items-center ${
+      className={`w-full h-full aspect-square items-center block ${
         !Icon && "justify-around children:bg-secondary flex flex-col p-1"
       }`}
     >
