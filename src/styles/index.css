@@ -14,7 +14,7 @@
   }
 
   small {
-    @apply text-xs;
+    @apply text-caption;
   }
 }
 
