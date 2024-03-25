@@ -62,11 +62,11 @@ export default function Links(props: LinkProp) {
       >
         <NavLink
           to={!index ? `/dashboard${path}` : path}
-          className={`text-caption block relative py-2 px-3`}
+          className={` block relative py-2 px-3`}
         >
-          <link.icon className="" />
+          <link.icon className="text-subtitle" />
           <span
-            className={`absolute top-1/2 -translate-y-1/2 left-10 transition-all duration-75 ease-in-out pt-1 whitespace-nowrap ${
+            className={`text-caption absolute top-1/2 -translate-y-1/2 left-11 transition-all duration-75 ease-in-out pt-[4.75px] whitespace-nowrap ${
               collapsed
                 ? "opacity-0 pointer-events-none"
                 : "opacity-100 pointer-events-auto"
