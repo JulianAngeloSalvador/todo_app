@@ -12,13 +12,6 @@ export default function Sidenav(props: MenuState) {
       className={`bg-tertiary top-0 left-0 h-dvh flex flex-col gap-4 p-2 flex-grow-0 flex-shrink-0 transition-all duration-100 ease-in-out relative group
       ${collapsed ? "basis-[3.75rem]" : "basis-56"}`}
     >
-      {/* <header
-        className={`flex items-center bg-primary rounded-md font-extra-bold text-sm relative p-1 ${
-          !collapsed ? "justify-end " : "justify-center"
-        }`}
-      >
-        {!collapsed && <h2 className="absolute left-0">Username</h2>}
-      </header> */}
       <ul className="flex flex-col gap-4">
         <Links collapsed={collapsed} role="main" />
       </ul>
