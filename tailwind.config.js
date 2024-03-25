@@ -9,7 +9,7 @@ export default {
     fontSize: {
       headline: "clamp(1.5rem, 3vw + 1rem, 3rem)",
       title: "clamp(1.75rem, 2.5vw + 1rem, 2rem)",
-      subtitle: "clamp(1.1rem, 1.65vw + 1rem, 1.25rem)",
+      subtitle: "clamp(1.2rem, 1.65vw + 1rem, 1.45rem)",
       "main-fs": "clamp(.9rem, 1.05vw + .05rem, 1rem)",
       caption: "clamp(0.75rem, 1.25vw + .5rem, .95rem)",
       sm: "clamp(0.675rem, 1.15vw + .25rem, .825rem)",
