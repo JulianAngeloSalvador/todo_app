@@ -1,4 +1,4 @@
-import MainContent from "../../pages/dashboard/MainContent";
+import MainContent from "./MainContent";
 
 export default function Calendar() {
   const CalendarContent = () => (
