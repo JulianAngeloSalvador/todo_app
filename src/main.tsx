@@ -12,6 +12,7 @@ import Dashboard from "./routes/Dashboard.tsx";
 import Todo from "./pages/dashboard/Todo.tsx";
 import DashboardIndex from "./pages/dashboard/DashboardIndex.tsx";
 import Settings from "./pages/dashboard/Settings.tsx";
+import Calendar from "./components/dashboard/Calendar.tsx";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,7 @@ const router = createBrowserRouter([
       { path: "/dashboard/calendar" },
       { path: "/dashboard/trash" },
       { path: "/dashboard/settings", element: <Settings /> },
+      { path: "/dashboard/calendar", element: <Calendar /> },
     ],
   },
 ]);
