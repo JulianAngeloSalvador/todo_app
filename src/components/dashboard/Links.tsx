@@ -4,8 +4,14 @@ import { LuListTodo, LuTrash2, LuCalendar, LuSettings } from "react-icons/lu";
 import { capitalizeFirstChar } from "../../utils/functions";
 import { SidelinkProps } from "../../utils/interface";
 import Logo from "../Logo";
+import UserAvatar from "./UserAvatar";
 
 const sidelinks: SidelinkProps[] = [
+  {
+    title: "account",
+    path: "/dashboard/account",
+    icon: UserAvatar,
+  },
   {
     title: "dashboard",
     path: "/dashboard",
@@ -62,7 +68,7 @@ export default function Links(props: LinkProp) {
       >
         <NavLink
           to={!index ? `/dashboard${path}` : path}
-          className={` block relative py-2 px-3`}
+          className={` block relative py-2 px-2`}
         >
           <link.icon className="text-subtitle" />
           <span
