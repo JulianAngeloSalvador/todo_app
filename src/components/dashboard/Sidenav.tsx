@@ -9,8 +9,8 @@ export default function Sidenav(props: MenuState) {
 
   return (
     <aside
-      className={`bg-tertiary top-0 left-0 h-dvh flex flex-col gap-4 p-2 flex-grow-0 flex-shrink-0 transition-all duration-100 ease-in-out relative group
-      ${collapsed ? "basis-[3.75rem]" : "basis-56"}`}
+      className={`bg-tertiary top-0 left-0 h-dvh flex flex-col gap-4 p-2 flex-grow-0 flex-shrink-0 transition-all duration-100 ease-in-out relative group 
+      ${collapsed ? "basis-[3.25rem]" : "basis-56"}`}
     >
       <ul className="flex flex-col gap-4">
         <Links collapsed={collapsed} role="main" />
