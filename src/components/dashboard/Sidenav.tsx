@@ -10,7 +10,7 @@ export default function Sidenav(props: MenuState) {
   return (
     <aside
       className={`bg-tertiary top-0 left-0 h-dvh flex flex-col gap-4 p-2 flex-grow-0 flex-shrink-0 transition-all duration-100 ease-in-out relative group
-      ${collapsed ? "basis-10" : "basis-56"}`}
+      ${collapsed ? "basis-[3.75rem]" : "basis-56"}`}
     >
       {/* <header
         className={`flex items-center bg-primary rounded-md font-extra-bold text-sm relative p-1 ${
