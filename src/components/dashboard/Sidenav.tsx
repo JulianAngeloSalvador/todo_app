@@ -19,13 +19,15 @@ export default function Sidenav(props: MenuState) {
       <ul className="flex flex-col gap-2 mt-auto">
         <Links collapsed={collapsed} role="footer" />
       </ul>
-      <div className="bg-tertiary absolute -right-4 top-1/2 -translate-y-1/2 w-8 aspect-square rounded-full grid place-items-center outline-3 outline-secondary hover:outline cursor-pointer opacity-0 group-hover:opacity-100">
+      <div
+        className={`bg-tertiary absolute top-1/2 -translate-y-1/2 w-12 aspect-square cursor-pointer opacity-0 scale-0 rotate-45 rounded-tr-3xl left-[calc(100%-1.5rem)] transition-all duration-100 ease-in-out group-hover:opacity-100 group-hover:scale-100`}
+      >
         <MenuToggler
           setCollapsed={setCollapsed}
           Icon={
             <MdOutlineKeyboardDoubleArrowLeft
-              className={`w-3/4 h-3/4  mx-auto ${
-                collapsed ? "rotate-180" : "rotate-360"
+              className={`w-1/2 h-1/2 mx-auto ${
+                collapsed ? "rotate-[135deg]" : "-rotate-[45deg]"
               }`}
             />
           }
